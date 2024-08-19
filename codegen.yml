@@ -1,0 +1,8 @@
+schema:  ${URL_GRAPHQL_API}
+documents: "bff/**/*.graphql"
+generates:
+  bff/generated/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"

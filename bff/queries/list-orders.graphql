@@ -1,0 +1,61 @@
+query ListOrders {
+  listOrders {
+    orderInformation {
+      orderNumber
+      orderDate
+      deliveryDate
+      purchaseOrderNumber
+    }
+    buyerInformation {
+      companyName
+      contactName
+      address
+      coordinates {
+        latitude
+        longitude
+      }
+      phoneNumber
+      emailAddress
+    }
+    supplierInformation {
+      supplierName
+      contactName
+      address
+      phoneNumber
+      emailAddress
+    }
+    itemDetails {
+      itemNumber
+      description
+      quantity
+      unitPrice
+      totalPrice
+      manufacturerPartNumber
+      leadTime
+      countryOfOrigin
+    }
+    paymentInformation {
+      paymentTerms
+      totalOrderCost
+      dueDate
+    }
+    shippingInformation {
+      shippingMethod
+      deliveryAddress
+      specialInstructions
+      trackingNumber
+    }
+    additionalInformation {
+      comments
+      certificationRequirements
+      warrantyInformation
+      inspectionRequirements
+    }
+    approval {
+      buyerSignature
+      buyerApprovalDate
+      supplierSignature
+      supplierApprovalDate
+    }
+  }
+}
