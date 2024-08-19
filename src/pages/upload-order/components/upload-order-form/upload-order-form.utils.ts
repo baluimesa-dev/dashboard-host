@@ -23,7 +23,7 @@ const parseTextToJson = async (extractedText: string) => {
     const apiKey = process.env.OPEN_AI_API_KEY;
     const url = process.env.URL_PARSE_ORDER;
     const MODEL = "gpt-4o-mini";
-    const INSTRUCTION = "convert to json using snake case for keys";
+    const INSTRUCTION = "convert to json using camel case for keys";
     const MAX_TOKENS = 1000;
     try {
         if (!apiKey || !url) {

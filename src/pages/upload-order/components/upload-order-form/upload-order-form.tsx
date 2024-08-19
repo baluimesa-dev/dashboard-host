@@ -25,6 +25,7 @@ export const UploadOrderForm = (props: UploadOrderFormProps) => {
   });
 
   const onSubmit = (data: FormValues) => {
+    
     try {
       setIsSubmitting(true);
       props.onSubmit?.(data);
@@ -33,7 +34,8 @@ export const UploadOrderForm = (props: UploadOrderFormProps) => {
       showSnackbar('Failed to submit order', 'error');
       console.error(error);
     }
-    console.log(data);
+    console.log("🚀 ~ onSubmit ~ data:", data)
+    setIsSubmitting(false)
   };
 
   const onErrorSubmit = (errors: FieldErrors<Partial<FormValues>>) => {

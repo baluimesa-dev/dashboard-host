@@ -11,7 +11,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "predeploy": "pnpm run build",
+    "predeploy": "pnpm build",
     "deploy": "gh-pages -d build"
   },
   "license": "MIT",
