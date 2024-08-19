@@ -1,6 +1,7 @@
 # Project Overview
 
 This diagram provides an overview of the architecture involving the Dashboard, its components, and data flows.
+Remote application for dashboard components can be found in https://github.com/baluimesa-dev/dashboard-remote
 
 ```mermaid
 flowchart TD
